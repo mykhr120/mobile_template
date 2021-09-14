@@ -9,55 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-<script>
-$(document).bind("bobileinit", function() {
-    $.mobile.page.prototype.options.addBackBtn = true;
-});
-</script>
 
-<script type="text/javascript">
-$(function() {
-	setSize();
-	//リサイズしたら実行
-	$(window).resize(function(){
-	   setSize();
-	});
-});
-function setSize() {
-	//画像サイズ指定
-	var imgW = 1000;
-	var imgH = 666;
-	//ウィンドウサイズ取得
-	var winW = $(window).width();
-	var winH = $(window).height();
-	
-	var scaleW = winW / imgW;
-	var scaleH = winH / imgH;
-	var fixScale = Math.max(scaleW, scaleH);
-	
-	var setW = imgW * fixScale;
-	var setH = imgH * fixScale;
-
-	var moveX = Math.floor((winW - setW) / 2);
-	var moveY = Math.floor((winH - setH) / 2);
-
-	$('#bg').css({
-		'width': setW,
-		'height': setH,
-		'left' : moveX,
-		'top' : moveY
-	});
-	
-	
-	$('#id1').css({
-		'width': setW,
-		'height': setH,
-		'left' : moveX,
-		'top' : moveY
-	});
-}
-
-</script>
 <style type="text/css">
 #bg, #bg2, #bg3 {
 	z-index: -1;
