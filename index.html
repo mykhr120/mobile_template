@@ -10,8 +10,39 @@
 <!--flip/touch do.js -->
 <!--Tablet/iOS/Android etc.mobile.responsible -->
 <!--nocode_for_webviewer.inAndroidApp_include.{:;}-->
-	
+
 <style type="text/css">
+	/*
+/*iphone 4*/
+	@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+/*here is for iphone*/
+}	
+/*Galaxy*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+/*here is for Galaxy*/
+}
+/*Nexus*/
+@media screen 
+  and (device-width: 384px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 2) {
+/*here is for Nexus*/
+}	
+
+	/**/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+/*here is for iPad*/
+}
+	*/
 #bg, #bg2, #bg3 {
 	z-index: -1;
 	position:fixed;
